@@ -21,7 +21,7 @@ curl -sSL https://get.rvm.io | bash -s stable
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 # vim configuration
-# TODO: get .vimrc
+wget -O ~/.vimrc 'https://gist.githubusercontent.com/xinhuang/4336621/raw/935ca0812db4df77819a7eb27884e57b201207ba/vimrc'
 vim +PluginInstall +qall
 
 apt-get install ubuntu-restricted-extras
