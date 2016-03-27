@@ -4,6 +4,8 @@ add-apt-repository -y ppa:saiarcot895/myppa     # apt-fast
 add-apt-repository -y ppa:jfi/myppa             # psensor
 add-apt-repository -y ppa:webupd8team/atom      # atom
 add-apt-repository -y ppa:webupd8team/java      # java
+add-apt-repository ppa:mpstark/elementary-tweaks-daily     # elementary-tweaks
+sudo add-apt-repository ppa:cybre/elementaryplus    # more elementary icons
 
 apt-get update
 
@@ -21,3 +23,7 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 # vim configuration
 # TODO: get .vimrc
 vim +PluginInstall +qall
+
+apt-get install ubuntu-restricted-extras
+apt-fast install elementary-wallpapers-extra
+apt-get install elementaryplus
