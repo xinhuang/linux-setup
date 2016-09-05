@@ -18,9 +18,10 @@ apt-fast -y install psensor atom
 apt-fast -y install libtbb2 libtbb-dev
 
 # python & python packages
-apt-fast -y install python python-pip
+apt-fast -y install python python-dev
+apt-fast -y install pip
 pip install pip --upgrade
-pip install ipython numpy
+pip install ipython numpy jupyter
 
 # rvm-prompt for oh-my-zsh
 gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
