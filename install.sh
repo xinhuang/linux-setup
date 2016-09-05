@@ -1,7 +1,6 @@
 #!/bin/sh
 
 add-apt-repository -y ppa:saiarcot895/myppa     # apt-fast
-# add-apt-repository -y ppa:jfi/myppa             # psensor
 add-apt-repository -y ppa:webupd8team/atom      # atom
 add-apt-repository -y ppa:webupd8team/java      # java
 add-apt-repository -y ppa:libreoffice/ppa       # libre office
@@ -33,8 +32,6 @@ wget -O ~/.vimrc 'https://gist.githubusercontent.com/xinhuang/4336621/raw/935ca0
 vim +PluginInstall +qall
 
 apt-fast install -y ubuntu-restricted-extras
-# apt-fast install -y elementary-wallpapers-extra
-# apt-fast install -y elementaryplus
 
 # these are the slow ones
 apt-fast install -y libreoffice
