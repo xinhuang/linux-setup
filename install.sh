@@ -4,13 +4,14 @@ sudo add-apt-repository -y ppa:saiarcot895/myppa     # apt-fast
 sudo add-apt-repository -y ppa:webupd8team/atom      # atom
 sudo add-apt-repository -y ppa:webupd8team/java      # java
 sudo add-apt-repository -y ppa:libreoffice/ppa       # libre office
+sudo add-apt-repository -y ppa:daniel.pavel/solaar
 
 sudo apt-get update
 
 sudo apt-get -y install apt-fast
 
 sudo apt-fast -y install zsh git vim g++ ruby gem cmake gdb gcc
-sudo apt-fast -y install psensor atom 
+sudo apt-fast -y install psensor atom solaar
 
 # development libraries
 # threading building blocks
@@ -34,8 +35,8 @@ vim +PluginInstall +qall
 sudo apt-fast install -y ubuntu-restricted-extras
 
 # these are the slow ones
-sudo apt-fast install -y libreoffice
-sudo apt-fast install -y oracle-java7-installer oracle-java8-installer
+# sudo apt-fast install -y libreoffice
+# sudo apt-fast install -y oracle-java7-installer oracle-java8-installer
 
 # at last we install oh-my-zsh and switch to zsh shell
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
