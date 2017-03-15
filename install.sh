@@ -43,3 +43,6 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 
 echo "Please modify /etc/passwd file to change default shell to zsh."
 
+sudo apt-fast -y install autojump
+wget http://www.trapkit.de/tools/checksec.sh
+
