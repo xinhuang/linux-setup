@@ -13,6 +13,9 @@ sudo apt-get -y install apt-fast
 sudo apt-fast -y install zsh git vim g++ ruby gem cmake gdb gcc
 sudo apt-fast -y install psensor atom solaar alacarte
 
+sudo apt-fast -y install apt-file
+apt-file update
+
 # development libraries
 # threading building blocks
 sudo apt-fast -y install libtbb2 libtbb-dev
@@ -20,8 +23,8 @@ sudo apt-fast -y install libtbb2 libtbb-dev
 # python & python packages
 sudo apt-fast -y install python python-dev
 sudo apt-fast -y install python-pip
-sudo pip install pip --upgrade
-sudo pip install ipython numpy jupyter
+sudo -H pip install pip --upgrade
+sudo -H pip install ipython numpy jupyter
 
 # rvm-prompt for oh-my-zsh
 sudo gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
@@ -44,5 +47,7 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 echo "Please modify /etc/passwd file to change default shell to zsh."
 
 sudo apt-fast -y install autojump
-wget http://www.trapkit.de/tools/checksec.sh
+# wget http://www.trapkit.de/tools/checksec.sh
+
+# For Dell, add `acpi=force` to GRUB_CMDLINE_LINUX_DEFAULT in `/etc/default/grub`, then run `update-grub`
 
