@@ -35,19 +35,21 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 wget -O ~/.vimrc 'https://gist.githubusercontent.com/xinhuang/4336621/raw/935ca0812db4df77819a7eb27884e57b201207ba/vimrc'
 vim +PluginInstall +qall
 
-sudo apt-fast install -y ubuntu-restricted-extras
+sudo apt-fast -y install ubuntu-restricted-extras
+
+sudo apt-fast -y install fcitx-googlepinyin fcitx-module-cloudpinyin
 
 # these are the slow ones
 # sudo apt-fast install -y libreoffice
 # sudo apt-fast install -y oracle-java7-installer oracle-java8-installer
 
+sudo apt-fast -y install autojump
 # at last we install oh-my-zsh and switch to zsh shell
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 echo "Please modify /etc/passwd file to change default shell to zsh."
 
-sudo apt-fast -y install autojump
 # wget http://www.trapkit.de/tools/checksec.sh
 
-# For Dell, add `acpi=force` to GRUB_CMDLINE_LINUX_DEFAULT in `/etc/default/grub`, then run `update-grub`
+echo "For Dell, add `acpi=force` to GRUB_CMDLINE_LINUX_DEFAULT in `/etc/default/grub`, then run `update-grub`"
 
