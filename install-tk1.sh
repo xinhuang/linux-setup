@@ -42,9 +42,11 @@ vim +PluginInstall +qall
 
 # sudo apt-fast install -y oracle-java7-installer oracle-java8-installer
 
+# for mounting cifs with utf8
+sudo apt-fast -y install cifs-utils linux-generic
+
 sudo apt-fast -y install autojump
 # at last we install oh-my-zsh and switch to zsh shell
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 echo "Please modify /etc/passwd file to change default shell to zsh."
-
