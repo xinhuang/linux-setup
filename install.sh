@@ -11,7 +11,7 @@ sudo apt-get update
 sudo apt-get -y install apt-fast
 
 sudo apt-fast -y install zsh git vim g++ ruby gem cmake gdb gcc
-sudo apt-fast -y install psensor atom solaar alacarte
+sudo apt-fast -y install psensor atom solaar alacarte redshift redshift-gtk
 
 sudo apt-fast -y install apt-file
 apt-file update
